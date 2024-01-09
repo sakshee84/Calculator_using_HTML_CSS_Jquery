@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: #191818;
+}
+
+.box{
+    border: 1px solid #717377;
+    padding: 10px;
+    width: 370px;
+    border-radius: 20px;
+    background: transparent;
+}
+
+input{
+    width: 320px;
+    padding: 14px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    color: #141212;
+    border-radius: 15px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #d5ded7ea;
+    cursor: pointer;
+}
+
+.equal {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px 40px;
+}
+
+h2{
+    color: white;
+    margin: 15px;
+    font-size: 50px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h2>Calculator</h2>
+    </div>
+
+    <div class="container text-center box">
+      <input type="text" id="display" placeholder="0" readonly /><br />
+
+      <button type="button" class="btn btn-outline-warning" onclick="clearAll()">AC</button>
+      <button type="button" class="btn btn-outline-warning" onclick="deleteLastDigit()">DEL</button>
+      <button type="button" class="btn btn-outline-warning" onclick="addOperator('%')">%</button>
+      <button type="button" class="btn btn-outline-warning" onclick="addOperator('/')">/</button><br />
+
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('7')">7</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('8')">8</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('9')">9</button>
+      <button type="button" class="btn btn-outline-warning" onclick="addOperator('*')">*</button><br />
+
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('4')">4</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('5')">5</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('6')">6</button>
+      <button type="button" class="btn btn-outline-warning" onclick="addOperator('-')">-</button><br />
+
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('1')">1</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('2')">2</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('3')">3</button>
+      <button type="button" class="btn btn-outline-warning" onclick="addOperator('+')">+</button><br />
+      
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('0')">0</button>
+      <button type="button" class="btn btn-outline-dark" onclick="addNumber('.')">.</button>
+      <button type="button" class="btn btn-outline-warning equal" onclick="calculate()">=</button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
